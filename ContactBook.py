@@ -6,7 +6,7 @@ def add_contact():
         print(" Invalid phone number! Please enter only digits.")
         return
     contact[name]=phone
-    print(f" Contact '{name}' added successfully!")
+    print(f" Contact '{name}' added successfully")
 
 def search_contact():
         search_name=input("Enter the contact name::")
@@ -29,7 +29,7 @@ def delete_contact():
             confirm=input("Do you want to delete this contact Y/N?")
             if confirm.lower() == 'y':
                 contact.pop(del_contact)
-                print(f"Contact '{del_contact}' deleted successfully!")   
+                print(f"Contact '{del_contact}' deleted successfully")   
         else:
             print("Name is not found in contact book")
   
