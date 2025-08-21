@@ -11,7 +11,6 @@ def add_contact():
 def search_contact():
         search_name=input("Enter the contact name::")
         if search_name in contact:
-            # print(search_name,"s contact number is",contact[search_name])
             print(f"{search_name}'s contact number is {contact[search_name]}")
         else:
             print("Not found in the contact book")
@@ -56,10 +55,10 @@ def contact_book():
         elif choice == "4":
             delete_contact()
         elif choice == "5":
-            print("👋 Exiting Contact Book...")
+            print(" Exiting Contact Book...")
             break
         else:
-            print("⚠️ Invalid choice. Try again.")
+            print(" Invalid choice. Try again.")
 
 if __name__ == "__main__":
     contact_book()
